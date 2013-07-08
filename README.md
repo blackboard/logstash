@@ -1,4 +1,4 @@
-logs
+Logs
 ====
 
 Log management
