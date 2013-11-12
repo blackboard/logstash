@@ -1,4 +1,6 @@
-Logs
-====
+# Log Management Solutions
 
-Log management
+## Blackboard Learn
+### Logstash
+Indexer configuration: logs/learn/logstash/indexer.conf
+Shipper configuration: logs/learn/logstash/shipper.conf
