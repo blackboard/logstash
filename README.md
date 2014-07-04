@@ -3,7 +3,10 @@
 ## Blackboard Learn
 Deployment
 ```
-collector(log shipper: logstash)* -> platform(message queue: redis -> log indexer: logstash(filters) -> full text search engine: Elasticsearch)
+collector(log shipper: logstash)* -> 
+platform(message queue: redis -> 
+         log indexer: logstash(filters) -> 
+         full text search engine: Elasticsearch)
 ```
 
 Log shipper configuration file
