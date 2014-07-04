@@ -1,14 +1,20 @@
 # logstash configurations
 
 ## Blackboard Learn
-Deployment⋅⋅
+Deployment
+```
 collector(log shipper: logstash)* -> platform(message queue: redis -> log indexer: logstash(filters) -> full text search engine: Elasticsearch)
+```
 
-Log shipper configuration file⋅⋅
+Log shipper configuration file
+```
 shipper.conf
+```
 
-Log indexer configurationi file⋅⋅
+Log indexer configurationi file
+```
 indexer.conf
+```
 
 This deployment approach provides the following benefits:
 * Enables modification of the parsing and processing logic without updating the logstash agents on the each server that you're collecting logs from. The number of index instances on the platform tier can be as little as one depending on the throughput volume to the message queue.
