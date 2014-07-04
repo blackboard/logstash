@@ -1,7 +1,6 @@
 # logstash configurations
 
-## Blackboard Learn
-Deployment
+## Deployment
 ```
 collector(log shipper: logstash)* -> 
 platform(message queue: redis -> 
